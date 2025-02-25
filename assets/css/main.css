@@ -389,6 +389,18 @@ ul.task-list input[type=checkbox] {
   border-radius: 50%;
 }
 
+@media (max-width: 768px) {
+    .profiles-grid {
+      grid-template-columns: repeat(2, 1fr); /* 화면이 작으면 2열 */
+    }
+}
+  
+@media (max-width: 560px) {
+    .profiles-grid {
+      grid-template-columns: repeat(1, 1fr); /* 더 작으면 1열 */
+    }
+}
+
 @media(min-width:576px) {
     .profile {
         /* width: 30% */
